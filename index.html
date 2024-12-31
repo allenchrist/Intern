@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   background-image:url(https://wallpapercave.com/wp/wp14832031.webp) ;
+   
+   }
+div{
+    color: azure;
+        width: 200px;
+        height: 250px;
+        text-align: center;
+        margin:100px;
+        border-radius: 1rem;
+        box-shadow: 200%;
+        cursor: pointer;
+        transition :5s;
+        
+    }
+    
+</style>
+<body >
+    <div>
+        <h1>Basic information</h1>
+    <form method="post" action="connect.php">
+        <label for="name">First Name</label>
+        <input type="text" id="name" name="name" placeholder="enter your first name" required><br><br>
+        <label for="quotes">Second Name</label>
+        <input type="text" id="quotes" name="quotes" required placeholder="enter your second name"><br><br>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com" ><br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass"  minlength="8" 
+        maxlength="20" 
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" placeholder="enter your password" >
+        <input   type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
