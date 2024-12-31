@@ -73,6 +73,7 @@ $result = $conn->query($sql);
                     <th>Full Name</th>
                     <th>Quotes</th>
                     <th>Email</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -81,6 +82,7 @@ $result = $conn->query($sql);
                         <td><?= htmlspecialchars($row['full_name']); ?></td>
                         <td><?= htmlspecialchars($row['quotes']); ?></td>
                         <td><?= htmlspecialchars($row['email']); ?></td>
+                        
                     </tr>
                 <?php endwhile; ?>
             </tbody>

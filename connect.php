@@ -17,6 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $quotes= $_POST['quotes'];
     $email= $_POST['email'];
     $pass= $_POST['pass'];
+
    
    
 
